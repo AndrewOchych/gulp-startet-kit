@@ -1,14 +1,33 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+html,
 body {
-  background-image: url("../img/2.jpg");
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+    height: 100%;
+    font-size: 100%;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+// Test styles
+body {
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
