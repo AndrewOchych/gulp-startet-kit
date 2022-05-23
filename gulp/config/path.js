@@ -2,19 +2,19 @@ const project_folder = "build"; // if you change build to exsample dist dont for
 const source_folder = "src";
 
 export default {
-  build: {
-    html: project_folder + "/",
-    css: project_folder + "/css/",
-    js: project_folder + "/js/",
-    img: project_folder + "/img/",
-    fonts: project_folder + "/fonts/",
-  },
   src: {
     html: source_folder + "/*.html",
     css: source_folder + "/scss/*.scss",
     js: source_folder + "/js/main.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: source_folder + "/fonts/*.ttf",
+  },
+  build: {
+    html: project_folder + "/",
+    css: project_folder + "/css/",
+    js: project_folder + "/js/",
+    img: project_folder + "/img/",
+    fonts: project_folder + "/fonts/",
   },
   watch: {
     html: source_folder + "/**/*.html",
@@ -23,4 +23,5 @@ export default {
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
   },
   clean: project_folder,
+  server: project_folder + "/",
 };
